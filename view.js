@@ -39,8 +39,8 @@ function createPlayerRow() {
     return addPlayer().map((players) =>
         players.map((player, index) =>
             ` <tr>
-        <td id="${player.playerName}" class="player-name">${player.playerName}</td>
-        <td>${player.playerPuan}</td>
+        <td id="${player.playerName}" class="player-name myColor">${player.playerName}</td>
+        <td class="myColor" >${player.playerPuan}</td>
       </tr>`
         )).join("")
 }
